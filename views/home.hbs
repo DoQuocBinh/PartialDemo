@@ -9,12 +9,13 @@
 <body>
     {{> header}}
     {{#if admin}}
-        Hello Admin
+        Hello  {{toUpper 'Admin'}}  
     {{/if}}
     {{#unless admin}}
         Your need Admin permision
     {{/unless}}
     Home page - Some website
+    {{{taoCombo 'HN;NY;Chicago;London'}}}
     {{> footer}}
 </body>
 </html>
