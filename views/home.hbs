@@ -8,6 +8,12 @@
 </head>
 <body>
     {{> header}}
+    {{#if admin}}
+        Hello Admin
+    {{/if}}
+    {{#unless admin}}
+        Your need Admin permision
+    {{/unless}}
     Home page - Some website
     {{> footer}}
 </body>

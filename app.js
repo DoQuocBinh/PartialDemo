@@ -11,10 +11,13 @@ app.get('/about',(req,res)=>{
     })
 })
 app.get('/',(req,res)=>{
+    var adminValue = '';
     res.render('home',{
-        pageTitle : 'Home page'
-    })
-})
+        pageTitle : 'Home page',
+        admin: adminValue
+        })
+    }   
+)
 
 app.listen(5000)
 console.log('Server is running!')
